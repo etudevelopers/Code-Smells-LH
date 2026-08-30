@@ -1,58 +1,24 @@
-# Just the Docs Template
+# Code Smells — Learning Hour
 
-Just the Docs template for creating the Documentation site for a GitHub repository. This template repository includes:
+A [Learning Hour] on code smells: recognizing them, classifying them, and knowing which refactoring resolves
+each one.
 
-- A [Jekyll] site configured with the [Just the Docs] theme, located in the `docs` folder
+This repository is generated from the [learning-hour-template] and includes:
+
+- A [Jekyll] site configured with the [Just the Docs] theme, located in the `site` folder
 - A copy of the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE-CC-BY-SA-4.0) in the
   repository root. This license applies to all site documentation content
 - A [GitHub Actions workflow] in the `.github/workflows` folder to build and deploy the site to GitHub Pages
-- A Java project in the `java` folder, configured with Maven for building and testing
-- A C# project in the `csharp` folder, configured with .NET for building and testing
-- A copy of the [MIT License] for the source code in the language specific folders (e.g., `java`), located in the repository
-- A GitHub Actions workflow for building and testing the Java project, located in `.github/workflows/java-build-test.yml`
-- A GitHub Actions workflow for building and testing the C# project, located in `.github/workflows/csharp-build-test.yml`
 - A Notice file for third-party attributions in the repository root
 
 ## Getting started
 
-To get started with creating a site, simply:
-
-1. Copy the [docs](docs) folder and [.github/workflows/pages.yml](.github/workflows/pages.yml) file into your
-   repository.
-2. Copy the [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0) and [NOTICE](NOTICE) files into your repository root.
-3. Go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-After completing the creation of your new site on GitHub, update it as needed:
-
-- `_config.yml` (site title, description, and repository URL)
-- `README.md` (information for those who access your site repo on GitHub)
-- `NOTICE` (attributions for any third-party content you use in your site)
-- `java/pom.xml` (project name, dependencies, and other configurations for the Java project)
-- `csharp/LearningHourTemplate/LearningHourTemplate.csproj` (project name, dependencies, and other configurations for the C# project)
-
-## Java Project
-
-This repository includes a Java project in the `java` folder, configured with Maven:
-
-- Standard Maven structure (`src/main/java`, `src/test/java`)
-- JUnit 5 and AssertJ for testing
-- Java 25 as the target version
-- Build and test using Maven commands (`mvn clean install`, `mvn test`)
-
-## C# Project
-
-This repository includes a C# project in the `csharp` folder, configured with .NET:
-
-- A solution (`LearningHourTemplate.sln`) with a main project and a test project
-- NUnit for testing
-- .NET 10 as the target framework
-- Build and test using .NET commands (`dotnet build`, `dotnet test`)
+1. Go to Settings > Pages > Build and deployment > Source, and select GitHub Actions to serve the `site` folder
+2. See [site/index.md](site/index.md) for the Learning Hour agenda
 
 ## GitHub Actions Workflows
 
 - **Site Deployment:** `.github/workflows/pages.yml` builds and deploys the documentation site to GitHub Pages.
-- **Java Build & Test:** `.github/workflows/java-build-test.yml` automatically builds and tests the Java project on push and pull request events. Test results are uploaded as artifacts.
-- **C# Build & Test:** `.github/workflows/csharp-build-test.yml` automatically builds and tests the C# project on push and pull request events. Test results are uploaded as artifacts.
 
 ## Building and previewing your site locally
 
@@ -62,20 +28,20 @@ Assuming [Jekyll] and [Bundler] are installed on your computer:
 2. Run `bundle install`.
 3. Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
 
-Alternatively, run `./docs/start_local_server.sh` from anywhere in the repository. It installs any missing
+Alternatively, run `./site/start_local_server.sh` from anywhere in the repository. It installs any missing
 gem dependencies and serves the site with live reload at `localhost:4000`.
 
-The built site is stored in the directory `docs/_site`.
+The built site is stored in the directory `site/_site`.
 
 ## Licensing and Attribution
 
 This repository uses the [Just the Docs] theme for static site generation. A copy of their [MIT License] is included in
-the `docs/` folder.
+the `site/` folder.
 
 The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT
 License is available in [actions/starter-workflows].
 
-All documentation content within the `docs/` folder is authored by Iván Fernández and licensed under
+All documentation content within the `site/` folder is licensed under
 the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License].
 
 You are generally free to reuse or extend upon the code in this repository as you see fit, provided you comply with the
@@ -85,6 +51,8 @@ terms of the respective licenses for the code and documentation.
 
 [Jekyll]: https://jekyllrb.com
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
+[Learning Hour]: https://sammancoaching.org/reference/learning_hour_definition.html
+[learning-hour-template]: https://github.com/ibanFR/learning-hour-template
 [GitHub Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
 [Bundler]: https://bundler.io
 [MIT License]: https://en.wikipedia.org/wiki/MIT_License
