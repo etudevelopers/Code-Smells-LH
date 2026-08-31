@@ -110,6 +110,8 @@ session.
 
 - [Martin Fowler's Code Smell definition][CodeSmell]
 - [Samman Coaching's Code Smells reference list](https://sammancoaching.org/reference/code_smells/index.html)
+- [Refactoring Guru's Code Smells catalog](https://refactoring.guru/refactoring/smells)
+- [Coding Horror: Code Smells](https://blog.codinghorror.com/code-smells/)
 - [Learning Hour: Connect Activities](https://sammancoaching.org/activities/connect.html)
 - [Learning Hour: Concept Activities](https://sammancoaching.org/activities/concept.html)
 - [Learning Hour: Concrete Practice Activities](https://sammancoaching.org/activities/concrete.html)
