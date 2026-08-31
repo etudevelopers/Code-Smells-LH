@@ -28,7 +28,7 @@ always indicate a real problem, but are worth a closer look — and the refactor
 - Practice recognizing a specific code smell, explaining how to detect and fix it, and producing an illustrative
   example — then teaching it to someone else
 
-## Connect activity to get everyone thinking about the topic (⏱️ 10 min)
+## Connect activity to get everyone thinking about the topic (⏱️ 5 min)
 
 **Warm-up.** Before we look at any formal list: do you know any code smells? What are they called? Write down
 every name you can think of.
@@ -36,7 +36,7 @@ every name you can think of.
 See [Connect Activities] in the [Samman Coaching] website for more ideas on how to connect with your team and
 introduce the topic of this Learning Hour.
 
-## An explanation of a new Concept or a coding demo (⏱️ 15 min)
+## An explanation of a new Concept or a coding demo (⏱️ 5 min)
 
 **What's a code smell?** [Martin Fowler's definition][CodeSmell]: a surface indication that usually corresponds
 to a deeper problem in the system.
@@ -69,7 +69,7 @@ For your assigned smell:
 See [Concrete Practice Activities] in the [Samman Coaching] website for more ideas on how to design a coding
 exercise to practice the new Concept.
 
-## Conclusions discussion and reflection (⏱️ 20 min)
+## Conclusions discussion and reflection (⏱️ 5 min)
 
 - If you had to explain the main idea of code smells to a colleague, what would you say?
 - Was recognizing and fixing your assigned smell easier or harder than you expected?
